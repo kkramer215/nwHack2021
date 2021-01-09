@@ -1,1 +1,1 @@
-# nwHack2021
+# nwHacks2021
