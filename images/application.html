@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sign-up Application</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Sign-up Application form</h1>
+<form action="http://localhost/Project/signup.php" method="POST">
+<fieldset><legend>Personal Information</legend>
+    <label for="FName">Full Name:*
+        <input type="text" name="FName" id="FName" required="required">
+    </label>
+    <br><br>
+    <label for="SNumber">Student Number:*
+        <input type="text" name="SNumber" id="SNumber" required="required">
+    </label>
+    <br><br>
+    <label for="Phone_number">Phone Number:*
+        <input type="text" name="Phone_number" id="Phone_number" required="required">
+    </label>
+    <br><br>
+    <label for="Location">Location:
+        <input type="text" name="Location" id="Location">
+    </label>
+</fieldset>
+
+<input type="submit" value="submit" id="submit">
+<input type="reset" value="clear" id="clearForm">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<h1> Find a Trainer</h1>
+<body>
+    <form action="http://localhost/Project/findTrainer.php" method= "POST">
+        <label for="Gym">Select your gym:</label>
+        <select id="Gym" name="Gym">
+            <option value="Plat gym">Plat gym</option>
+            <option value="Golds gym">Golds gym</option>
+            <option value="Silver gym">Silver gym</option>
+            <option value="Bronze gym">Bronze gym</option>
+        </select>
+        <br><br>
+        <label for="Rating">Min rating:
+            <input type="text" name="Rating" id="Rating">   
+        </label>
+        <br><br>
+        <label for="focus">Training focus:
+        <input type="radio" id="Cardio" name="focus" value="Cardio" checked>
+        <label for="Cardio">Cardio</label>
+        <input type="radio" id="Endurance" name="focus" value="Endurance">
+        <label for="Endurance">Endurance</label>
+        <input type="radio" id="Strength" name="focus" value="Strength">
+        <label for="Strength">Strength</label><br>
+        </label>
+        <br><br>
+
+    <input type="submit" value="find" id="submit">
+    <input type="reset" value="clear" id="clearForm">
+
+
+    </form>
+</body>
+</html>
