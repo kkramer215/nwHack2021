@@ -1,0 +1,296 @@
+body{
+    font-family: Tahoma,Arial, Helvetica, sans-serif;
+    background-color: #79031D;
+}
+header {
+    font-family:Tahoma;
+    background-color:#79031D;
+    grid-area: header;
+    overflow: auto;
+     padding: 0 , 0px;
+    
+
+}
+h1{
+    text-align: center;
+    background-color: #000407;
+    padding: 0 , 0px;
+}
+
+nav {
+    text-align: center;
+    word-spacing: 100px;
+    grid-area: nav;
+    background-color: #000407;
+    padding:10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+  }
+  nav a:hover{
+    background-color:#CFCBCB;
+    text-decoration: none;
+  }
+  
+.side{
+    grid-area: side;
+    background-color:#79031D;
+}
+.intro {
+    grid-area: intro;
+    background-color: #251B1A;
+    color: white;
+    padding: 25px;
+
+
+}
+h2 {
+    text-align: center;
+}
+footer{
+    text-align: center;
+    word-spacing: 50px;
+    grid-area: footer;
+    background-color: #000407;
+    padding: 10px;
+    clear: both;
+    color: white;
+
+}
+footer a{
+    color:white;
+    text-decoration: none;
+}
+#wrapper  {
+    display: grid;
+    grid-gap: 10px;
+    grid-template: "header header"
+    "nav nav"
+    "intro side"
+    "footer footer";
+}
+.cnav{
+float: left;
+display: block;
+grid-area: nav;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 100px 50px;
+    width: 150px;
+    
+  }
+  li a{
+    display: block;
+    padding: 15px 5px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  #right{
+      float: right;
+  }
+  #Cimg{
+      float: right;
+      transform: rotate(7deg);
+  }
+  .main {
+    background-color: #251B1A;
+    color: white;
+    padding: 105px 105px 154px 300px;
+  }
+  p a{
+      color: gold;
+  }
+  .info{
+    background-color: #251B1A;
+    color: white;
+    grid-area: info;
+  }
+  .edu{
+    background-color: #251B1A;
+    color: white;
+    grid-area: edu;
+  }
+  .liv{
+    background-color:rgb(191, 143, 11);
+    grid-area: liv;
+  }
+  #wrap  {
+    display: grid;
+    grid-gap: 10px;
+    grid-template:
+    "nav nav"
+    "edu liv"
+    "info info"
+    "footer footer";
+}
+
+a img{
+    float: right;
+    clear: both;
+}
+.gap li{
+    margin: 100px 0px;
+}
+.about{
+    background-color: #251B1A;
+    color: white;
+    padding: 30px 10px 25px 30px;
+    grid-area: about;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 50%;
+    height: 50%;
+    margin: 2% 25%;
+
+}
+div{
+    padding: 5px;
+}
+video{
+    float: right;
+}
+#wrp{
+    display: grid;
+    grid-gap: 0px;
+    grid-template: "header header"
+    "nav about"
+    "nav about"
+    "footer footer";
+}
+a:hover {
+    background-color: rgb(160, 218, 3);
+    color: black;
+  }
+  a.active {
+    background-color: rgba(0, 138, 192, 0.747);
+    color: white;
+  }
+@media only screen and (max-width: 768px){
+    #wrapper{
+        display: grid;
+        grid-gap: 0px;
+        grid-template: "header"
+        "nav"
+        "intro"
+        "side"
+        "footer";
+    }
+     img{
+        display: none;
+    }
+    nav a{
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+    }
+    footer a{
+        display: block;
+    }
+    #wrap{ 
+        display: grid;
+        grid-gap: 0px;
+        grid-template: "header"
+        "nav"
+        "edu"
+        "liv"
+        "info"
+        "footer";
+
+    }
+    #wp{
+        display: grid;
+        grid-gap: 0px;
+        grid-template: "header"
+        "nav"
+        "main"
+        "footer";
+    }
+    #wrp{
+        display: grid;
+        grid-gap: 0px;
+        grid-template: "header"
+        "nav"
+        "about"
+        "about"
+        "footer";
+    }
+    .cnav a{
+        display: block;
+        padding: 15px 0px 0px 130px;
+    }
+    .about{
+        padding: 25px;
+    }
+    video{
+        display: none;
+    }
+footer{
+    text-decoration: none;
+}
+.main{
+    padding: 25px;
+}
+footer a{
+    text-decoration: none;
+}
+}
+@media only screen and (min-width: 768px) and (max-width:1366px){
+    #wrapper{
+        display: grid;
+        grid-gap: 0px;
+        grid-template: "header"
+        "nav"
+        "intro"
+        "side"
+        "footer";
+    }
+    .about{
+        padding: 50px;
+    }
+    #wp{
+        display: grid;
+        grid-gap: 0px;
+        grid-template: "header"
+        "nav"
+        "main"
+        "footer";
+    }
+    #wrap{ 
+        display: grid;
+        grid-gap: 0px;
+        grid-template: "header"
+        "nav"
+        "edu"
+        "liv"
+        "info"
+        "footer";
+    }
+    #wrp{
+        display: grid;
+        grid-gap: 0px;
+        grid-template: "header"
+        "nav"
+        "about"
+        "about"
+        "footer";
+    }
+    .cnav a{
+        display: block;
+        padding: 15px 0px 0px 300px;
+    }
+    video{
+        transform: scale(0.8);
+    }
+footer a{
+    text-decoration: none;
+}
+.main{
+    padding: 50px;
+}
+}
