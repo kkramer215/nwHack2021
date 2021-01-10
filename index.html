@@ -8,22 +8,33 @@
 	<body>
         <div id="wrapper">
         <header><h1><img src="images/fit_buddy.png" alt="Fit Buddy" width="200" height="200"></h1></header>
-        <nav>
-            <a href="contact.html">Contact</a>
-            <a href="http://localhost/Project/Gyms.php">Gyms</a>
-            <a href="http://localhost/Project/Trainers.php">Trainers</a>
-            <a href="about.html">About</a>
-            <a href="find.html">Search</a>
-            <a href="application.html" target="_blank">Register</a>
-            
-        </nav>
-        <div class="intro">
+        <nav role="navigation">
+            <ul >
+              <li class="mainNav"><a href="contact.html">Contact</a></li>
+              <li class="mainNav"><a href="#">Gyms</a></a>
+                <ul class="dropdown">
+                  <li><a href="http://localhost/Project/Gyms.php">Gyms List</a></li>
+                  <li><a href="FindGym.html">findGym</a></li>
+                </ul>
+              </li>
+              <li class="mainNav"><a href="#">Trainers</a>
+                <ul class="dropdown">
+                    <li><a href="http://localhost/Project/Trainers.php">Trainers List</a></li>
+                    <li><a href="findTrainer.html">findTrainer</a></li>
+                  </ul>
+                </li>
+              
+              <li class="mainNav"><a href="about.html">About</a></li>
+              <li class="mainNav"><a href="application.html" target="_blank">Register</a></li>
+            </ul>
+          </nav>
+          <div class="intro">
             <h2>Why Fit Buddy?</h2>
             <p>Looking for the right gym to fit your needs can take hours to research. 
             Fit buddy finds the nearest gyms around you and summarizes key aspects like their membership fees and trainers and compares them to find the best match for you!
             Wherever you are, there's no need to worry about not being familiar with your surroundings if you're looking for a gym. Find out more about how it works <a href="about.html">here</a>
             </p>
-	    <p>
+            <p>
                 Check out the Trainers and Gyms page to see training schedules, staff and more!
             </p>
         </div>

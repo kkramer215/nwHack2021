@@ -16,23 +16,20 @@ h1{
     background-color: #000407;
     padding: 0 , 0px;
 }
+#white{
+    color: white;
+}
 
+ul{
+    display: inline;
+}
 nav {
     text-align: center;
     word-spacing: 100px;
     grid-area: nav;
     background-color: #000407;
-    padding:10px;
+    display: inline;
 }
-nav a{
-    color: white;
-    text-decoration: none;
-  }
-  nav a:hover{
-    background-color:#CFCBCB;
-    text-decoration: none;
-  }
-  
 .side{
     grid-area: side;
     background-color:#79031D;
@@ -45,6 +42,47 @@ nav a{
 
 
 }
+.dropdown{
+    display: block;
+    background-color: #000407;
+    padding: 0;
+}
+ul li {
+    display: block;
+    transition-duration: 0.5s;
+    float: left;
+    
+}
+
+   .mainNav{
+    padding-right: 25px;
+    padding-left: 175px;
+   }
+   
+   li:hover {
+     cursor: pointer;
+   }
+   
+   ul li ul {
+     visibility: hidden;
+     opacity: 0;
+     position:absolute;
+     transition: all 0.5s ease;
+     display: none;
+   }
+   
+   ul li:hover > ul,
+   ul li ul:hover {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+   }
+   
+   ul li ul li {
+     clear: both;
+     width: 100%;
+   }
+
 h2 {
     text-align: center;
 }
@@ -70,9 +108,10 @@ footer a{
     "intro side"
     "footer footer";
 }
+
 .cnav{
 float: left;
-display: block;
+display: inline;
 grid-area: nav;
 }
 nav ul {
@@ -80,6 +119,7 @@ nav ul {
     margin: 0;
     padding: 100px 50px;
     width: 150px;
+    display: inline;
     
   }
   li a{
@@ -159,18 +199,28 @@ video{
     display: grid;
     grid-gap: 0px;
     grid-template: "header header"
-    "nav about"
-    "nav about"
+    "nav nav"
+    "about about"
     "footer footer";
+}
+#wp{
+    display: grid;
+    grid-gap: 0px;
+    grid-template: "header"
+    "nav"
+    "about";
 }
 a:hover {
     background-color: rgb(160, 218, 3);
     color: black;
-  }
-  a.active {
-    background-color: rgba(0, 138, 192, 0.747);
-    color: white;
-  }
+}
+a.active {
+background-color: rgba(0, 138, 192, 0.747);
+color: white;
+}
+p img{
+    padding:25px,0px;
+}
 @media only screen and (max-width: 768px){
     #wrapper{
         display: grid;
@@ -206,10 +256,9 @@ a:hover {
     #wp{
         display: grid;
         grid-gap: 0px;
-        grid-template: "header"
-        "nav"
-        "main"
-        "footer";
+        grid-template: "header header"
+        "nav nav"
+        "main main";
     }
     #wrp{
         display: grid;
@@ -220,24 +269,11 @@ a:hover {
         "about"
         "footer";
     }
-    .cnav a{
-        display: block;
-        padding: 15px 0px 0px 130px;
-    }
     .about{
         padding: 25px;
     }
-    video{
-        display: none;
-    }
-footer{
-    text-decoration: none;
-}
 .main{
     padding: 25px;
-}
-footer a{
-    text-decoration: none;
 }
 }
 @media only screen and (min-width: 768px) and (max-width:1366px){
